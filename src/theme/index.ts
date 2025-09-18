@@ -1,0 +1,12 @@
+// Barrel file for theme exports
+// Theme Factory
+export { createPalette } from './base/palette.ts'; // Palette resolver
+export { getTheme } from './base/base.ts'; // Theme factory
+export { resolveColors } from './utils/resolveColors.ts'; // Color resolution logic
+// Config
+export { type DefaultPaletteConfig, defaultPalette } from './config/defualtPaletteConfig.ts'; // Default + interface
+export { authorPalette, clientPalette, type ManualPaletteConfig } from './config/chosenPalette.ts'; // Manual override layer
+// Typography & Breakpoints
+export { default as breakpoints } from './base/breakpoints.ts'; // Breakpoints
+export { resolvedFonts } from './base/fonts.ts'; // Font resolver
+export { default as typography } from './base/typography.ts'; // Typography factory
