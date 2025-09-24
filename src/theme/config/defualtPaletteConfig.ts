@@ -10,6 +10,9 @@ export interface DefaultPaletteConfig {
   backgroundPaper: DefaultPaletteType;
   textPrimary: DefaultPaletteType;
   textSecondary: DefaultPaletteType;
+  errorMain?: DefaultPaletteType;
+  infoMain?: DefaultPaletteType;
+  divider?: DefaultPaletteType;
 }
 
 export const defaultPalette: DefaultPaletteConfig = {
@@ -36,5 +39,17 @@ export const defaultPalette: DefaultPaletteConfig = {
   textSecondary: {
     light: '#757575',
     dark: 'rgba(255,255,255,0.7)'
+  },
+  errorMain: {
+    light: '#d32f2f',
+    dark: '#f44336'
+  },
+  infoMain: {
+    light: '#0288d1',
+    dark: '#29b6f6'
+  },
+  divider: {
+    light: 'rgba(0,0,0,0.12)',
+    dark: 'rgba(255,255,255,0.12)'
   }
 }

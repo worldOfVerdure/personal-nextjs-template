@@ -10,6 +10,9 @@ export interface ManualPaletteConfig {
   backgroundPaper?: ManualPaletteType;
   textPrimary?: ManualPaletteType;
   textSecondary?: ManualPaletteType;
+  errorMain?: ManualPaletteType;
+  infoMain?: ManualPaletteType;
+  divider?: ManualPaletteType;
 }
 //Palette for client chooses colors
 export const clientPalette: ManualPaletteConfig = {
@@ -62,6 +65,18 @@ export const authorPalette: ManualPaletteConfig = {
   },
   textSecondary: {
     light: undefined,
+    dark: undefined,
+  },
+  errorMain: {
+    light: undefined,
+    dark: undefined,
+  },
+  infoMain: {
+    light: undefined,
+    dark: undefined,
+  },
+  divider: {
+    light: undefined, // Reusing paper tone for soft section breaks
     dark: undefined,
   },
 };

@@ -14,7 +14,7 @@ const nextConfig: NextConfig = {
     return [
       {
         source: "/payload/:path*",
-        destination: `${process.env.CMS_URL}`,
+        destination: `${process.env.NEXT_PUBLIC_CMS_BASE_URL}/:path*`,
       },
     ];
   },

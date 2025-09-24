@@ -1,4 +1,4 @@
-import Test from '../components/test/temp.tsx'
+import Test from '../components/test/Test.tsx';
 
 export default function HomePage() {
   return (
