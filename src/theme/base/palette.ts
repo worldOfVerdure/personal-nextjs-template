@@ -1,5 +1,5 @@
+import { authorPalette, clientPalette } from '../config/chosenPaletteConfig.ts';
 import { defaultPalette } from '../config/defualtPaletteConfig.ts';
-import { clientPalette, authorPalette } from '../config/chosenPalette.ts';
 import { PaletteOptions } from '@mui/material/styles';
 import { PaletteTokenKey } from '../utils/paletteTypes.ts';
 import { resolveColors } from '../utils/resolveColors.ts';
@@ -28,6 +28,12 @@ export const createPalette = (
     secondary: {
       main: resolveToken('secondaryMain'),
     },
+    error: {
+      main: resolveToken('errorMain'),
+    },
+    info: {
+      main: resolveToken('infoMain'),
+    },
     background: {
       default: resolveToken('backgroundDefault'),
       paper: resolveToken('backgroundPaper'),
@@ -36,5 +42,6 @@ export const createPalette = (
       primary: resolveToken('textPrimary'),
       secondary: resolveToken('textSecondary'),
     },
+    divider: resolveToken('divider')
   };
 };

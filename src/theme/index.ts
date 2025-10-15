@@ -5,10 +5,10 @@ export { getTheme } from './base/base.ts'; // Theme factory
 export { resolveColors } from './utils/resolveColors.ts'; // Color resolution logic
 // Config
 export { type DefaultPaletteConfig, defaultPalette } from './config/defualtPaletteConfig.ts'; // Default + interface
-export { authorPalette, clientPalette, type ManualPaletteConfig } from './config/chosenPalette.ts'; // Manual override layer
+export { authorPalette, clientPalette, type ManualPaletteConfig } from './config/chosenPaletteConfig.ts'; // Manual override layer
 // Typography & Breakpoints
 export { default as breakpoints } from './base/breakpoints.ts'; // Breakpoints
-export { resolvedFonts } from './base/fonts.ts'; // Font resolver
+export { resolvedFonts } from './config/fontsConfig.ts'; // Font resolver
 export { default as typography } from './base/typography.ts'; // Typography factory
 // Emotion Cache
 export { emotionCache } from './emotionCache.ts';

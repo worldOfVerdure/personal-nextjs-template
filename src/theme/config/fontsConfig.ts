@@ -1,4 +1,3 @@
-// src/theme/base/fonts.ts
 export type FontConfig = {
   body: string;
   heading: string;
@@ -10,7 +9,7 @@ type ClientFontConfig = {
   heading: string | undefined;
   mono?: string | undefined;
 }
-//TODO: How would I get the custom fonts to be added here from the CMA?
+
 const clientFonts: ClientFontConfig = {
   body: undefined,
   heading: undefined,

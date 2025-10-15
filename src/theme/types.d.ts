@@ -15,26 +15,38 @@ declare module '@mui/material/styles' {
   }
   // ✅ Extend Typography variants inside the theme
   interface TypographyVariants {
-    navItem: CSSProperties;
-    navTitle: CSSProperties;
+    cardDescription: CSSProperties;
+    cardPrice: CSSProperties;
+    cardTitle: CSSProperties;
     btnContained: CSSProperties;
     btnOutline: CSSProperties;
+    navItem: CSSProperties;
+    navItemCard: CSSProperties;
+    navTitle: CSSProperties;
   }
 
   interface TypographyVariantsOptions {
-    navItem?: CSSProperties;
-    navTitle?: CSSProperties;
+    cardDescription?: CSSProperties;
+    cardPrice?: CSSProperties;
+    cardTitle?: CSSProperties;
     btnContained?: CSSProperties;
     btnOutline?: CSSProperties;
+    navItem?: CSSProperties;
+    navItemCard?: CSSProperties;
+    navTitle?: CSSProperties;
   }
 }
 
 // ✅ Allow usage of `variant="navItem"` in <Typography>
 declare module '@mui/material/Typography' {
   interface TypographyPropsVariantOverrides {
-    navItem: true;
-    navTitle: true;
+    cardDescription: true;
+    cardPrice: true;
+    cardTitle: true;
     btnContained: true;
     btnOutline: true;
+    navItem: true;
+    navItemCard: true;
+    navTitle: true;
   }
 }

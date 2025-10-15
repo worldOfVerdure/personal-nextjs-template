@@ -10,9 +10,9 @@ export interface DefaultPaletteConfig {
   backgroundPaper: DefaultPaletteType;
   textPrimary: DefaultPaletteType;
   textSecondary: DefaultPaletteType;
-  errorMain?: DefaultPaletteType;
-  infoMain?: DefaultPaletteType;
-  divider?: DefaultPaletteType;
+  errorMain: DefaultPaletteType;
+  infoMain: DefaultPaletteType;
+  divider: DefaultPaletteType;
 }
 
 export const defaultPalette: DefaultPaletteConfig = {

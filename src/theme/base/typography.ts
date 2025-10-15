@@ -1,5 +1,5 @@
 import { Breakpoints } from '@mui/material/styles';
-import { type FontConfig } from './fonts.ts';
+import { type FontConfig } from '../config/fontsConfig.ts';
 
 const customTypography = (
   fonts: FontConfig,
@@ -100,7 +100,97 @@ const customTypography = (
       fontSize: '3.4rem',
     },
   },
+  body2: {
+    fontFamily: fonts.body,
+    fontSize: '1.6rem', // xs
+    lineHeight: 1.5,
+    [`@media (min-width:${breakpoints.sm}px)`]: {
+      fontSize: '1.7rem',
+    },
+    [`@media (min-width:${breakpoints.md}px)`]: {
+      fontSize: '2rem',
+    },
+    [`@media (min-width:${breakpoints.lg}px)`]: {
+      fontSize: '2.2rem',
+    },
+    [`@media (min-width:${breakpoints.xl}px)`]: {
+      fontSize: '2.3rem',
+    }
+  },
   /* Custom variants go here */
+  cardDescription: {
+    fontFamily: fonts.body,
+    fontWeight: 400,
+    fontSize: '1.6rem', // xs
+    letterSpacing: '0.01em',
+    lineHeight: 1.3,
+    [`@media (min-width:${breakpoints.sm}px)`]: {
+      fontSize: '1.7rem',
+    },
+    [`@media (min-width:${breakpoints.md}px)`]: {
+      fontSize: '1.8rem',
+    },
+    [`@media (min-width:${breakpoints.lg}px)`]: {
+      fontSize: '1.9rem',
+    },
+    [`@media (min-width:${breakpoints.xl}px)`]: {
+      fontSize: '2rem',
+    },
+    [`@media (min-width:${breakpoints.xxl}px)`]: {
+      fontSize: '2.1rem',
+    },
+    [`@media (min-width:${breakpoints.xxxl}px)`]: {
+      fontSize: '2.2rem',
+    },
+  },
+  cardPrice: {
+    fontFamily: fonts.heading,
+    fontWeight: 600,
+    fontSize: '2.3rem', // xs
+    lineHeight: 1.5,
+    [`@media (min-width:${breakpoints.sm}px)`]: {
+      fontSize: '2.4rem',
+    },
+    [`@media (min-width:${breakpoints.md}px)`]: {
+      fontSize: '2.55rem',
+    },
+    [`@media (min-width:${breakpoints.lg}px)`]: {
+      fontSize: '2.6rem',
+    },
+    [`@media (min-width:${breakpoints.xl}px)`]: {
+      fontSize: '2.7rem',
+    },
+    [`@media (min-width:${breakpoints.xxl}px)`]: {
+      fontSize: '3.05rem',
+    },
+    [`@media (min-width:${breakpoints.xxxl}px)`]: {
+      fontSize: '3.15rem',
+    },
+  },
+  cardTitle: {
+    fontFamily: fonts.heading,
+    fontWeight: 400,
+    fontSize: '2.2rem', // xs
+    lineHeight: 1.5,
+    [`@media (min-width:${breakpoints.sm}px)`]: {
+      fontSize: '2.3rem',
+    },
+    [`@media (min-width:${breakpoints.md}px)`]: {
+      fontSize: '2.45rem',
+    },
+    [`@media (min-width:${breakpoints.lg}px)`]: {
+      fontSize: '2.5rem',
+    },
+    [`@media (min-width:${breakpoints.xl}px)`]: {
+      fontSize: '2.6rem',
+    },
+    [`@media (min-width:${breakpoints.xxl}px)`]: {
+      fontSize: '2.95rem',
+    },
+    [`@media (min-width:${breakpoints.xxxl}px)`]: {
+      fontSize: '3.05rem',
+    },
+  },
   btnContained: {
     fontFamily: fonts.body,
     fontSize: '1.6rem', // xs
@@ -138,6 +228,21 @@ const customTypography = (
     },
     [`@media (min-width:${breakpoints.lg}px)`]: {
       fontSize: '2.9rem',
+    }
+  },
+  navItemCard: {
+    fontFamily: fonts.body,
+    fontSize: '1.6rem', // xs
+    fontWeight: 400,
+    lineHeight: 1,
+    [`@media (min-width:${breakpoints.sm}px)`]: {
+      fontSize: '1.7rem',
+    },
+    [`@media (min-width:${breakpoints.md}px)`]: {
+      fontSize: '1.8rem',
+    },
+    [`@media (min-width:${breakpoints.lg}px)`]: {
+      fontSize: '1.9rem',
     }
   },
   navTitle: {
