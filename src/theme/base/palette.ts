@@ -1,47 +1,34 @@
-import { authorPalette, clientPalette } from '../config/chosenPaletteConfig.ts';
-import { defaultPalette } from '../config/defualtPaletteConfig.ts';
+import { authorPalette } from '../config/paletteConfig.ts';
 import { PaletteOptions } from '@mui/material/styles';
-import { PaletteTokenKey } from '../utils/paletteTypes.ts';
-import { resolveColors } from '../utils/resolveColors.ts';
 
 export type Mode = 'light' | 'dark';
 
 export const createPalette = (
   mode: Mode,
 ): PaletteOptions => {
-  const resolveToken = (
-    key: PaletteTokenKey,
-  ): string => {
-    const clientValue = clientPalette[key]?.[mode];
-    const authorValue = authorPalette[key]?.[mode];
-    const defaultValue = defaultPalette[key]?.[mode];
-
-    return resolveColors(clientValue, authorValue, defaultValue, mode).color;
-  };
-
   return {
     mode,
     primary: {
-      main: resolveToken('primaryMain'),
+      main: authorPalette['primaryMain'][mode],
       contrastText: '#fff',
     },
     secondary: {
-      main: resolveToken('secondaryMain'),
+      main: authorPalette['secondaryMain'][mode],
     },
     error: {
-      main: resolveToken('errorMain'),
+      main: authorPalette['errorMain'][mode],
     },
     info: {
-      main: resolveToken('infoMain'),
+      main: authorPalette['infoMain'][mode],
     },
     background: {
-      default: resolveToken('backgroundDefault'),
-      paper: resolveToken('backgroundPaper'),
+      default: authorPalette['backgroundDefault'][mode],
+      paper: authorPalette['backgroundPaper'][mode],
     },
     text: {
-      primary: resolveToken('textPrimary'),
-      secondary: resolveToken('textSecondary'),
+      primary: authorPalette['textPrimary'][mode],
+      secondary: authorPalette['textSecondary'][mode],
     },
-    divider: resolveToken('divider')
+    divider: authorPalette['divider'][mode]
   };
 };

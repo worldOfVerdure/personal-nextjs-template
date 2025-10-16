@@ -10,14 +10,6 @@ const nextConfig: NextConfig = {
   //   domains: ["your-cdn.com",  "payloadcms.com"], // For next/image external sources
   // },
   outputFileTracingRoot: path.join(__dirname),
-  async rewrites() {
-    return [
-      {
-        source: "/payload/:path*",
-        destination: `${process.env.NEXT_PUBLIC_CMS_BASE_URL}/:path*`,
-      },
-    ];
-  },
   // env: {
   //   GRAPHQL_ENDPOINT: process.env.GRAPHQL_ENDPOINT,
   //   PAYLOAD_API_URL: process.env.PAYLOAD_API_URL,
