@@ -1,3 +1,5 @@
+/** @jsxImportSource @emotion/react */
+
 {
   "compilerOptions": {
     "allowImportingTsExtensions": true,
@@ -10,6 +12,7 @@
     "lib": ["dom", "esnext"],
     "incremental": true,
     "jsx": "react-jsx",
+    "jsxImportSource": "@emotion/react",
     "module": "esnext",
     "moduleResolution": "bundler",
     "noEmit": true,

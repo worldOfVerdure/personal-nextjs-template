@@ -13,3 +13,6 @@ to my tech stack and settings. In addition, certain optimizations and features a
 [CHANGELOG.md](./CHANGELOG.md) for version history.
 
 ## TODO
+
+~~- Add /** @jsxImportSource @emotion/react */ at top of tsconfig.base.json~~
+~~- Add "jsxImportSource": "@emotion/react", to tsconfig.base.json~~

@@ -1,4 +1,3 @@
-// import { clientPaletteConfig as cmsClientPaletteConfig } from '../cms/clientConfig.ts'; // 👈 Eventual CMS input
 import { createPalette } from './palette.ts';
 import { createTheme } from '@mui/material/styles';
 import customBreakpoints from './breakpoints.ts';
