@@ -13,9 +13,3 @@ to my tech stack and settings. In addition, certain optimizations and features a
 [CHANGELOG.md](./CHANGELOG.md) for version history.
 
 ## TODO
-
-~~- Update "@types/react": "^18.2.0" "@types/react-dom": "^18.2.0" as dev dependencies to match React
-19 dependencies~~
-
-~~- Update Next 15.5.2 to Next 16~~
-~~- Update eslint-config-next to 16~~
