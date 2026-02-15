@@ -10,6 +10,10 @@ const nextConfig: NextConfig = {
   //   domains: ["your-cdn.com",  "payloadcms.com"], // For next/image external sources
   // },
   outputFileTracingRoot: path.join(__dirname),
+  // Emotion configuration for CSS-in-JS
+  compiler: {
+    emotion: true,
+  },
   // env: {
   //   GRAPHQL_ENDPOINT: process.env.GRAPHQL_ENDPOINT,
   //   PAYLOAD_API_URL: process.env.PAYLOAD_API_URL,

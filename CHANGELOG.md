@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented here.
 
+## [1.2.0] - 2026-02-15
+
+Emotion Server-Side Rendering Configuration:
+
+✅ Created EmotionRegistry component for proper Next.js App Router SSR support
+
+🔧 Updated ClientLayout to use EmotionRegistry instead of basic CacheProvider to prevent FOUC
+
+⚙️ Added Emotion compiler configuration to next.config.ts
+
+📦 Exported EmotionRegistry from theme index for easier imports
+
 ## [1.1.0] - 2025-10-24
 
 ⬆️ Upgraded Next.js from 15.5.2 to ^16.0.0, bringing in the latest performance and framework improvements

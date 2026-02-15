@@ -13,3 +13,4 @@ to my tech stack and settings. In addition, certain optimizations and features a
 [CHANGELOG.md](./CHANGELOG.md) for version history.
 
 ## TODO
+~~- Add react spring to dependencies~~

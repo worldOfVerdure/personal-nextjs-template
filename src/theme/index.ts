@@ -8,5 +8,6 @@ export { authorPalette, type ManualPaletteConfig } from './config/paletteConfig.
 export { default as breakpoints } from './base/breakpoints.ts'; // Breakpoints
 export { resolvedFonts } from './config/fontsConfig.ts'; // Font resolver
 export { default as typography } from './base/typography.ts'; // Typography factory
-// Emotion Cache
+// Emotion Cache & Registry
 export { emotionCache } from './emotionCache.ts';
+export { EmotionRegistry } from './EmotionRegistry';
